@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>网站</title>
-  <style>  
-    body {
-      margin: 0;
-      /* 全屏背景核心样式 */
-      background-image: url('https://pic.rmb.bdstatic.com/bjh/down/ducut-cover-202411-051809d31be0cbd2bf835d1e902d8efa.png?for=bg');
-      background-size: cover;       /* 铺满屏幕，不变形 */
-      background-position: center;  /* 图片居中 */
-      background-attachment: fixed; /* 滚动页面背景不晃动 */
-      min-height: 100vh;            /* 高度铺满可视窗口 */
-      color: #fff;                  /* 默认文字白色 */
-      font-size: 20px;
-      /* 新增弹性布局，实现底部固定 */
-      display: flex;
-      flex-direction: column;
-    }
-    /* 中间内容自动占满剩余空间，把底部挤到最下方 */
-    .main-content {
-      flex: 1;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            color: #fff; /* 默认文字白色 */
+            font-size: 20px;
+            /* 新增弹性布局，实现底部固定 */
+            display: flex;
+            flex-direction: column;
+        }
+        /* 中间内容自动占满剩余空间，把底部挤到最下方 */
+        .main-content {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-  <!-- 主体内容区域 -->
-  <div class="main-content" style="padding:10px; text-align:center">
-    <p style="margin:0;">第一个网站</p>
-    <p style="margin:0;color:red;font-size:30px ">下面是一些测试<mp3/p>
-    <audio src="UnicornPhantom.mp3" controls loop ;type="audio/mpeg"></audio>
-  </div>
-loop
-  <!-- 底部盒子，自动固定在页面最底端 -->
-  <div style="background-color:#f1f1f1;text-align:center;padding:20px;font-size:12px;color:#000;">
-    <p>这将是我的第一个个人网站</p>
-    <a href="https://www.midorg.com/" target="_blank">友情链接</a>
-  </div>
+    <!-- 主体内容区域 -->
+    <div class="main-content" style="padding:10px; text-align:center">
+        <p style="margin:0;">第一个网站</p>
+        <p style="margin:0;color:red;font-size:30px;">下面是一些测试mp3</p>
+        <!-- 修正后的音频标签 -->
+        <audio src="UnicornPhantom.mp3" controls loop type="audio/mpeg" style="margin-top:20px;">
+            您的浏览器不支持HTML5音频播放。
+        
+    </div>
+
+    <!-- 底部盒子，自动固定在页面最底端 -->
+    <div style="background-color:#f1f1f1;text-align:center;padding:20px;font-size:12px;color:#000;">
+        <p>这将是我的第一个个人网站</p>
+        <a href="https://www.midorg.com/" target="_blank">友情链接</a>
+    </div>
 </body>
 </html>
